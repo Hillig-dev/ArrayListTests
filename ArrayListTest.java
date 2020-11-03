@@ -20,13 +20,17 @@ public class ArrayListTest {
        myList.add(2, subject3);
       
        // print out of ArrayList:
+       System.out.println("My favorite subjects: ");
        for  (int  i=0;  i<myList.size(); i++) {
            System.out.println(myList.get(i));
        }
        // change element of ArrayList: 
        subject1 = "sports"; 
        myList.set(0, subject1);
+       myList.remove(1);
        
+       // print out of ArrayList:
+       System.out.println("My favorite subjects revised: ");
        for  (int  i=0;  i<myList.size(); i++) {
            System.out.println(myList.get(i));
        }
