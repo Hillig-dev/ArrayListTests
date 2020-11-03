@@ -7,13 +7,21 @@ import java.util.ListIterator;
 public class ArrayListTest {
     
     /*
-     *  test and practice class for use of ArrayList
+     *  class for practicing with ArrayList
      */
 
-    public void arrayListMethod() {
-       String subject1 = "maths";
-       String subject2 = "geography";
-       String subject3 = "history";
+    private String subject1;
+    private String subject2;
+    private String subject3;
+    
+   public ArrayListTest(String subject1, String subject2, String subject3) {
+       this.subject1 = subject1;
+       this.subject2 = subject2;
+       this.subject3 = subject3;
+   };
+    
+   public void arrayListMethod() {
+       
         
        ArrayList<String> myList = new ArrayList<String>();
        myList.add(0, subject1);
@@ -22,7 +30,7 @@ public class ArrayListTest {
       
       /* alternative print out :
        * System.out.println("My favorite subjects: ");
-       for  (int  i=0;  i<myList.size(); i++) {
+       for  (int i=0;  i<myList.size(); i++) {
            System.out.println(myList.get(i));
        }
        */
